@@ -1,4 +1,11 @@
 import { FiSettings, FiCloud, FiTrendingUp, FiShield } from "react-icons/fi";
+import {
+  FaServer,
+  FaCloud,
+  FaShieldAlt,
+  FaHeadset,
+  FaCog,
+} from "react-icons/fa";
 
 export const serviceCards = [
   {
@@ -6,7 +13,7 @@ export const serviceCards = [
     description:
       "Мы настраиваем системы так, чтобы ваши сайты и приложения обновлялись автоматически, без ошибок и простоев.",
     tags: ["IT", "Автоматизация"],
-    icon: FiSettings, // react-icons dan foydalanamiz
+    icon: FiSettings,
   },
   {
     title: "Работа с облачными сервисами",
@@ -31,7 +38,6 @@ export const serviceCards = [
   },
 ];
 
-// Benefits data
 export const benefits = [
   {
     title: "Экономия времени и ресурсов",
@@ -51,7 +57,6 @@ export const benefits = [
   },
 ];
 
-// Footer links data with URLs
 export const footerLinks = [
   {
     text: "Сертификат Резидента ИТ парка",
@@ -72,5 +77,54 @@ export const footerLinks = [
   {
     text: "Предложить идею",
     url: "#",
+  },
+];
+
+export const navigationItems = [
+  { label: "О ПРОДУКТЕ" },
+  { label: "ЦЕНЫ" },
+  { label: "КОНТАКТЫ" },
+];
+
+export const heroSlides = [
+  {
+    title: "Современные IT-решения для вашего бизнеса",
+    highlight: "IT-решения",
+    description:
+      "Хотите, чтобы ваш сайт, приложение или онлайн-сервис работали быстро, надежно и без сбоев? Мы занимаемся тем, что делаем IT-инфраструктуру автоматизированной, безопасной и удобной в управлении.",
+    icon: FaServer,
+    iconColor: "#6573ff",
+  },
+  {
+    title: "Облачные технологии для эффективной работы",
+    highlight: "Облачные технологии",
+    description:
+      "Переведите вашу инфраструктуру в облако и получите доступ к данным из любой точки мира. Наши облачные решения обеспечивают высокую доступность и масштабируемость вашего бизнеса.",
+    icon: FaCloud,
+    iconColor: "#4facfe",
+  },
+  {
+    title: "Защита данных на высшем уровне",
+    highlight: "Защита данных",
+    description:
+      "Мы обеспечиваем комплексную защиту ваших данных от несанкционированного доступа, вирусов и других угроз. Безопасность вашего бизнеса - наш приоритет.",
+    icon: FaShieldAlt,
+    iconColor: "#43c6ac",
+  },
+  {
+    title: "Техническая поддержка 24/7",
+    highlight: "Техническая поддержка",
+    description:
+      "Наша команда специалистов готова решить любые технические проблемы в любое время суток. Мы гарантируем быстрое реагирование и эффективное устранение неполадок.",
+    icon: FaHeadset,
+    iconColor: "#f7b733",
+  },
+  {
+    title: "Индивидуальные решения для бизнеса",
+    highlight: "Индивидуальные решения",
+    description:
+      "Разрабатываем IT-решения с учетом специфики вашей отрасли и потребностей бизнеса. Наш индивидуальный подход поможет вам выделиться среди конкурентов.",
+    icon: FaCog,
+    iconColor: "#ed213a",
   },
 ];

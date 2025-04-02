@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-// Define the animation types
 type AnimationType =
   | "fade-up"
   | "fade-down"
@@ -11,7 +10,6 @@ type AnimationType =
   | "zoom-in"
   | "zoom-out";
 
-// Define the component props interface
 interface AnimatedSectionProps {
   children: React.ReactNode;
   delay?: number;
@@ -20,9 +18,6 @@ interface AnimatedSectionProps {
   className?: string;
 }
 
-/**
- * AnimatedSection component that animates its children when they enter the viewport
- */
 const AnimatedSection: React.FC<AnimatedSectionProps> = ({
   children,
   delay = 0,

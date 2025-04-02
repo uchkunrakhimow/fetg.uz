@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <footer className="py-12 mt-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-        {/* Links Column */}
         <div className="space-y-4">
           {footerLinks.map((link, index) => (
             <div
@@ -24,7 +23,6 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Social Networks Column */}
         <div className="flex flex-col items-center justify-start">
           <div className="flex gap-6">
             <a href="https://facebook.com/fetg.uz/">
@@ -36,7 +34,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Contacts Column */}
         <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-between md:space-x-6 lg:space-x-14">
           <div className="space-y-6">
             <BiPhoneCall className="w-6 h-6 text-[#ff7664]" />

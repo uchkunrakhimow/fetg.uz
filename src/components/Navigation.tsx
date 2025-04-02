@@ -9,12 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ThemeToggle } from "./ThemeToggle";
 import { MdOutlineCallMade } from "react-icons/md";
-
-const navigationItems = [
-  { label: "О ПРОДУКТЕ" },
-  { label: "ЦЕНЫ" },
-  { label: "КОНТАКТЫ" },
-];
+import { navigationItems } from "@/data/data";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,16 +21,13 @@ export const Navigation = () => {
     };
 
     checkIfMobile();
-
     window.addEventListener("resize", checkIfMobile);
-
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
   return (
-    <nav className="py-4 bg-[#282828] dark:bg-[#1E0044] rounded-[20px_20px_0px_0px] px-4 md:px-9">
+    <nav className="py-4 bg-[#282828] dark:bg-[#1E0044] rounded-[20px_20px_0px_0px] px-4 md:px-9 mt-3">
       <div className="flex items-center justify-between relative">
-        {/* Logo */}
         <img
           className="relative w-32 h-8 md:w-44 md:h-11 object-cover"
           alt="Element"
