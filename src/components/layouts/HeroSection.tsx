@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { heroSlides } from "@/data/data";
+
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -30,7 +31,8 @@ const HeroSection = () => {
 
   return (
     <div className="w-full rounded-b-[20px] overflow-hidden bg-gradient-to-tr from-[#eee] to-[#f7e9e7] dark:from-[#1E0044] dark:to-[#3f028f]">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-[50px] py-[60px]">
+      {/* Fixed height container */}
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-[50px] py-[60px] h-[550px] md:h-[650px]">
         <div className="flex flex-col items-start gap-6 max-w-[518px] md:w-1/2">
           <h1 className="font-bold text-4xl md:text-[64px] leading-tight tracking-[-3.20px] dark:text-white">
             <span className="tracking-[-2.05px]">
@@ -74,7 +76,8 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="md:w-1/2 h-[426px] flex items-center justify-center relative">
+        {/* Absolute positioning for icon container */}
+        <div className="md:w-1/2 h-[350px] flex items-center justify-center relative">
           {heroSlides.map((slide, index) => {
             const SlideIcon = slide.icon;
             return (
@@ -90,7 +93,7 @@ const HeroSection = () => {
                 }}
               >
                 <div className="p-8 rounded-full bg-white shadow-lg">
-                  <SlideIcon size={180} color={slide.iconColor} />
+                  <SlideIcon size={160} color={slide.iconColor} />
                 </div>
               </div>
             );

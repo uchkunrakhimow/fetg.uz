@@ -18,7 +18,9 @@ export const Home = () => {
   return (
     <section className="flex flex-col items-center w-full">
       {/* Hero Section */}
-      <MemoizedHeroSection />
+      <div className="relative w-full">
+        <MemoizedHeroSection />
+      </div>
 
       {/* Services Section */}
       <MemoizedServicesSection />
