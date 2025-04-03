@@ -1,6 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import ServiceCard from "@/components/layouts/ServiceCard";
-import { serviceCards } from "@/data/data";
+import ServiceCard from "@/components/ServiceCard";
+import { serviceCards } from "@/constants/data";
 
 const ServicesSection = () => {
   return (

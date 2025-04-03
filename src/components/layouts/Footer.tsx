@@ -1,7 +1,7 @@
 import { BiPhoneCall } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
-import { footerLinks } from "@/data/data";
+import { footerLinks } from "@/constants/data";
 
 const Footer = () => {
   return (

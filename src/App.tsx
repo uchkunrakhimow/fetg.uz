@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Home } from "./pages/Home.tsx";
-import { Navigation } from "./components/Navigation.tsx";
+import { Navigation } from "./components/NavBar.tsx";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);

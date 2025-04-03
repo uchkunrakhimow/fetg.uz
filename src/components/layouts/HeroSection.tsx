@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { heroSlides } from "@/data/data";
+import { heroSlides } from "@/constants/data";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

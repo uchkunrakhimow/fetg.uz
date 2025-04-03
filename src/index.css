@@ -1,6 +1,62 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff7664;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5a46;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff7664 rgba(0, 0, 0, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ff7664;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff5a46;
+  }
+
+  * {
+    scrollbar-color: #ff7664 rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+}
+
 *,
 *::before,
 *::after {

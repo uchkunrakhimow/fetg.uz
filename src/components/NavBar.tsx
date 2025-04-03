@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ThemeToggle } from "./ThemeToggle";
 import { MdOutlineCallMade } from "react-icons/md";
-import { navigationItems } from "@/data/data";
+import { navigationItems } from "@/constants/data";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
